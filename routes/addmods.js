@@ -9,5 +9,4 @@ router.get("/", function (req, res, next) {
   res.render("addmods", { title: "Add Mods", query: req.query });
 });
 
-
 module.exports = router;

@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  h1= Add Mods
+  h1= title
   p #{query.rows} and #{query.cols}
   - let rows = Number(query.rows)
   - let cols = Number(query.cols)
@@ -10,7 +10,7 @@ block content
   else if rows > 6 || rows < 1
     p row value is out of range
   else if cols>6 || rows<1
-    p colum value is out of range 
+    p column value is out of range 
   else 
     table#outer 
     - for (let i=0;i<rows;i++) {
