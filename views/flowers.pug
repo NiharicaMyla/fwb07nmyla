@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  - const flowers = ['Flower_type','Color','Cost']
+  - let results; 
+  div(class='container-fluid')
+    div(class='row')
+      each results, index in flowers
+        div(class='col-sm-4') #{results} 
